@@ -4,6 +4,7 @@ import { SelectedPageENUM } from './Scenes/Navbar/EnumTypes';
 import Home from './Scenes/Home/Home';
 import Benifits from './Scenes/Benifits/Benifits';
 import Classes from './Scenes/Classes/Classes';
+import Contact from './Scenes/Contact/Contact';
 
 function App() {
   const [SelectedPage,SetSelectedPage]=useState<SelectedPageENUM>(SelectedPageENUM.Home)
@@ -25,7 +26,8 @@ function App() {
       <Navbar SelectedPage={SelectedPage} SetSelectedPage={SetSelectedPage} IsTopOfPage={IsTopOfPage}/>
       <Home SetSelectedPage={SetSelectedPage} />
       <Benifits SetSelectedPage={SetSelectedPage} />
-      <Classes/>
+      <Classes SetSelectedPage={SetSelectedPage}/>
+      <Contact SetSelectedPage={SetSelectedPage}/>
     </div>
   )
 }
