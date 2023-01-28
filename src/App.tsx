@@ -5,6 +5,7 @@ import Home from './Scenes/Home/Home';
 import Benifits from './Scenes/Benifits/Benifits';
 import Classes from './Scenes/Classes/Classes';
 import Contact from './Scenes/Contact/Contact';
+import Footer from './Scenes/Footer/Footer';
 
 function App() {
   const [SelectedPage,SetSelectedPage]=useState<SelectedPageENUM>(SelectedPageENUM.Home)
@@ -28,6 +29,7 @@ function App() {
       <Benifits SetSelectedPage={SetSelectedPage} />
       <Classes SetSelectedPage={SetSelectedPage}/>
       <Contact SetSelectedPage={SetSelectedPage}/>
+      <Footer/>
     </div>
   )
 }

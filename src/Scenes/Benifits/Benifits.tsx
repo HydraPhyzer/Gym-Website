@@ -9,7 +9,6 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import EachBenifit from "./EachBenifit";
-import React from "react";
 import ActionButton from "../Navbar/ActionButton";
 
 type Props = {
@@ -64,6 +63,7 @@ const Benifits = ({ SetSelectedPage }: Props) => {
                 Icon={Each.Icon}
                 Title={Each.Title}
                 Desc={Each.Desc}
+                Delay={Ind}
               />
             );
           })}
